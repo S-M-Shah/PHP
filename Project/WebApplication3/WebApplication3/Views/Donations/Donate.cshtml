@@ -1,0 +1,63 @@
+﻿@model WebApplication3.Models.DONATION
+@{
+    ViewBag.Title = "Donate";
+    Layout = "~/Views/Shared folder/_Layout2.cshtml";
+}
+
+
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Donate Now</h2>
+            </div>
+            <div class="col-12">
+                <a href="~/User/index">Home</a>
+                <a href="">Donate</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Donate Start -->
+<div class="container">
+    <div class="donate" data-parallax="scroll" data-image-src="~ /users/img/donate.jpg">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="donate-content">
+                    <div class="section-header">
+                        <p>Donate Now</p>
+                        <h2>Let's donate to needy people for better lives</h2>
+                    </div>
+                    <div class="donate-text">
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non. Aliquam metus tortor, auctor id gravida, viverra quis sem. Curabitur non nisl nec nisi maximus. Aenean convallis porttitor. Aliquam interdum at lacus non blandit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="donate-form">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="control-group">
+                            @Html.EditorFor(model => model.amount, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Your AMOUNT" } })
+                        </div>
+                        <div class="control-group">
+                            @Html.EditorFor(model => model.cat_id, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Your CAT_ID" } })
+                        </div>
+                        <div class="control-group">
+                            @Html.EditorFor(model => model.use_id, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Your USE_ID" } })
+                        </div>
+                        
+                            <button class="btn btn-custom" type="submit">Donate Now</button>
+                       
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Donate End -->

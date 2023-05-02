@@ -1,0 +1,27 @@
+﻿@model WebApplication3.Models.DONATION
+@{
+    ViewBag.Title = "formD";
+    Layout = "~/Views/Shared folder/_Layout1.cshtml";
+}
+
+<h2>DONATIONS FORM</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label for="inputAddress">AMOUNT</label>
+        @Html.EditorFor(model => model.amount, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+    <div class="form-group">
+        <label for="inputAddress">CAT_ID</label>
+        @Html.EditorFor(model => model.cat_id, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+    <div class="form-group">
+        <label for="inputAddress">USE_ID</label>
+        @Html.EditorFor(model => model.use_id, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Donate Now</button>
+}

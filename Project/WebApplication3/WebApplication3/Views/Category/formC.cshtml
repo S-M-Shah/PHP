@@ -1,0 +1,18 @@
+﻿@model WebApplication3.Models.CATEGORY
+@{
+    ViewBag.Title = "formC";
+    Layout = "~/Views/Shared folder/_Layout1.cshtml";
+}
+
+<h2>CATEGORY FORM</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label for="inputAddress">cat_name</label>
+        @Html.EditorFor(model => model.cat_name, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Your Category_Name" } })
+    </div>
+    <button type="submit" class="btn btn-danger">Add Category</button>
+}

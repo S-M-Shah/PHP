@@ -1,0 +1,24 @@
+﻿@model WebApplication3.Models.PARTNER
+@{
+    ViewBag.Title = "formP";
+    Layout = "~/Views/Shared folder/_Layout1.cshtml";
+}
+
+<h2>PARTNERS FORM</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <label for="inputAddress">Partner_name</label>
+        @Html.EditorFor(model => model.Partner_name, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+
+
+    <div class="form-group">
+        <label for="inputAddress">Since</label>
+        @Html.EditorFor(model => model.since, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Sign in</button>
+}

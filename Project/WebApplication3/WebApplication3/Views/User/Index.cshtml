@@ -1,0 +1,344 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared folder/_Layout2.cshtml";
+}
+
+<!-- Carousel Start -->
+<div class="carousel">
+    <div class="container-fluid">
+        <div class="owl-carousel">
+            <div class="carousel-item">
+                <div class="carousel-img">
+                    <img src="~/users/img/carousel-1.jpg" alt="Image">
+                </div>
+                <div class="carousel-text">
+                    <h1>Let's be kind for children</h1>
+                    <p>
+                        Even small acts of kindness create feelings of self-worth and belonging. Acts of kindness
+                        increase energy and give a wonderful feeling of optimism. Increased Feelings of Gratitude –
+                        Children learn to appreciate what they have when helping those less fortunate.
+
+                    </p>
+                    <div class="carousel-btn">
+                        <a class="btn btn-custom" href="~/Donations/Create">Donate Now</a>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img">
+                    <img src="~/users/img/carousel-2.jpg" alt="Image">
+                </div>
+                <div class="carousel-text">
+                    <h1>Get Involved with helping hand</h1>
+                    <p>
+                        Helping others is an act of spreading happiness around the world which in turn makes you
+                        happy. This gesture also shows humanity and kindness. When you help others in any form, you
+                        have many chances to get help when you are stuck somewhere. Make sure while helping others,
+                        your intention should be pure, and you should be sure to help others.
+                    </p>
+                    <div class="carousel-btn">
+                        <a class="btn btn-custom" href="~/Donations/donate">Donate Now</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img">
+                    <img src="~/users/img/carousel-3.jpg" alt="Image">
+                </div>
+                <div class="carousel-text">
+                    <h1>Bringing smiles to millions</h1>
+                    <p>
+                        Putting a smile on someone’s face is one of the most rewarding experiences for anyone. We
+                        are all looking for happiness and love in our lives. This may just be what we need to make
+                        us feel fulfilled and complete.
+
+                        Being able to make others happy is an amazing experience. It can be something small like
+                        saying a nice word or giving a compliment that will leave an everlasting impression on them.
+                    </p>
+                    <div class="carousel-btn">
+                        <a class="btn btn-custom" href="~/Donations/Donate">Donate Now</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
+<!-- Video Modal Start-->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Video Modal End -->
+<!-- About Start -->
+<div class="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img" data-parallax="scroll">
+                    <img src="~/users/img/about.jpg" height="500" />
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="section-header">
+                    <p>Learn About Us</p>
+                    <h2>Worldwide non-profit charity organization</h2>
+                </div>
+                <div class="about-tab">
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#tab-content-1">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#tab-content-2">Mission</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#tab-content-3">Vision</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="tab-content-1" class="container tab-pane active">
+                            NGO is a nonprofit dedicated to finding outstanding giving opportunities and
+                            publishing the full details of our analysis to help donors decide where to give.
+                            We don't focus solely on financials, such as assessing administrative or fundraising
+                            costs. Instead, we conduct in-depth research to determine how much good a given program
+                            accomplishes (in terms of lives saved, lives improved, etc.) per dollar spent. Rather
+                            than rating as many charities as possible, we focus on the few charities that stand out
+                            most (by our criteria) in order to find and confidently recommend high-impact giving
+                            opportunities (our funds).
+                        </div>
+                        <div id="tab-content-2" class="container tab-pane fade">
+                            The N G O is a welfare that's charitable and non-proﬁtable registered NGO
+                            that began with the sole purpose of serving the humanity with its basic needs, reaching
+                            out to the far-fetched horizons it has embraced till date. The organization is there for
+                            all sorts of natural and unnatural fatalities, disasters and delimmas that mankind could
+                            ever encounter. Keeping in mind the one and only motive of this welfare is to reach out
+                            to those who are underprivileged, seeks justice and demands hospitality. The
+                            organization has made sure to leave no page devoid of its utmost concern for the
+                            well-being of the society. It made sure to prevail equality amongst the citizens and
+                            connecting hearts with all sorts of help according to the Islamic teachings and moral
+                            ethics of a democratic society. it adheres and moral ethics of a democratic society
+                            innocent people, promoting welfare to all ages, classes and creeds.
+                        </div>
+                        <div id="tab-content-3" class="container tab-pane fade">
+                            Charity is the act of giving help to those in need of it. It is a humanitarian act. It
+                            involves giving money, goods or time and effort to those who need it. It is done without
+                            expecting something in return. Giving money or food to poor people is an example of
+                            charity. Poor, sick or injured people are generally considered the proper people to whom
+                            charity should be given. When such people are not supported, they often begin begging,
+                            which is directly asking for help from people they do not know.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+<!-- Service Start -->
+<div class="service">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>What We Do?</p>
+            <h2>We believe that we can save more lifes with you</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-diet"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3>Healthy Food</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-water"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3>Pure Water</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-healthcare"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3>Health Care</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-education"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3>Primary Education</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-home"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3>Residence Facilities</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-social-care"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3>Social Care</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+<!-- Facts Start -->
+<div class="facts" data-parallax="scroll" data-image-src="~/users/img/facts.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="flaticon-home"></i>
+                    <div class="facts-text">
+                        <h3 class="facts-plus" data-toggle="counter-up">150</h3>
+                        <p>Countries</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="flaticon-charity"></i>
+                    <div class="facts-text">
+                        <h3 class="facts-plus" data-toggle="counter-up">400</h3>
+                        <p>Volunteers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="flaticon-kindness"></i>
+                    <div class="facts-text">
+                        <h3 class="facts-dollar" data-toggle="counter-up">10000</h3>
+                        <p>Our Goal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="flaticon-donation"></i>
+                    <div class="facts-text">
+                        <h3 class="facts-dollar" data-toggle="counter-up">5000</h3>
+                        <p>Raised</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Facts End -->
+<!-- Team Start -->
+<div class="team">
+    <div class="container">
+        <div class="section-header text-center">
+
+            <h2>Our Team</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="~/users/img/download (4).jpg" alt="Team Image" height="300">
+                    </div>
+                    <div class="team-text">
+                        <h2>Urooj</h2>
+                        <p>Founder & CEO</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-lg-4 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="~/users/img/download(6).png" alt="Team Image" height="300">
+                    </div>
+                    <div class="team-text">
+                        <h2>Wania</h2>
+                        <p>Chef Advisor</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="~/users/img/download (3).jpg" alt="Team Image" height="300">
+                    </div>
+                    <div class="team-text">
+                        <h2>Affan </h2>
+                        <p>Advisor</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+<!-- Testimonial Start -->
+
+<!-- Testimonial End -->

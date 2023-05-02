@@ -1,0 +1,56 @@
+﻿@model WebApplication3.Models.User
+@{
+    ViewBag.Title = "USERE";
+    Layout = "~/Views/Shared folder/_Layout2.cshtml";
+}
+
+
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>About Us</h2>
+            </div>
+            <div class="col-12">
+                <a href="~/User/index">Home</a>
+                <a href="">About Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<div class="container">
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            <label for="inputAddress">USER_NAME</label>
+            @Html.EditorFor(model => model.users_name, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Your Password", type = "User Name" } }) 
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">EMAIL</label>
+            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Your Password", type = "Email" } }) 
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">PASSWORD</label>
+            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Your Password", type = "Password" } }) 
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">D_B_O</label>
+            @Html.EditorFor(model => model.d_b_o, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Your Password", type = "D_B_O" } })
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">CONTACT</label>
+            @Html.EditorFor(model => model.contact_num, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Your Password", type = "Contact" } }) 
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">ROLE_ID</label>
+            @Html.EditorFor(model => model.Role_id, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Your Password", type = "Role Id" } })
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    }
+</div>
+
